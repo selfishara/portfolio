@@ -28,6 +28,17 @@ The project follows a modular backend structure separating controllers, services
 <img src="../assets/screenshots/projects/belgem/backend/project-structure.png" width="700">
 
 ---
+## Controller Example
+
+<img src="../assets/screenshots/projects/belgem/backend/controller-example.png" width="700">
+
+---
+
+## Service Layer
+
+<img src="../assets/screenshots/projects/belgem/backend/service-layer.png" width="700">
+
+---
 
 ## API Endpoints
 
@@ -45,12 +56,11 @@ Database schema used to structure the system's data.
 
 ---
 
-## Interface Mockups
+## Database Tables (Supabase)
 
 Preview of the application tables.
 
 <img src="../assets/screenshots/projects/belgem/mockups/belgem-tables.png" width="700">
-
 ---
 
 ## Repository
