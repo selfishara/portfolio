@@ -25,12 +25,12 @@ The goal of the project is to manage business-related data through a structured 
 
 The project follows a modular backend structure separating controllers, services, repositories, and domain logic.
 
-![Project Structure](belgem/backend/project-structure.png)
+![Project Structure](backend/project-structure.png)
 
 ---
 ## Controller Example
 
-![Controller Example](belgem/backend/controller-example.png)
+![Controller Example](backend/controller-example.png)
 
 ---
 
