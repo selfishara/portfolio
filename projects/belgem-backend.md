@@ -2,11 +2,11 @@
 
 ## Overview
 
-Belgem Backend is a backend system developed using Java and Spring Boot, designed to manage business data through a modular and well-structured architecture.
+Belgem Backend is a backend system developed with Java and Spring Boot, focused on building a modular and scalable API architecture.
 
-The project focuses on building a scalable REST API while applying clean architectural principles and separating domain logic from infrastructure concerns.
+The project follows clean backend development practices, separating business logic, persistence, and API layers to maintain a clear and maintainable structure.
 
-This project was developed as part of a real-world development environment and emphasizes maintainability and structured backend design.
+The goal of the project is to manage business-related data through a structured backend system.
 
 ---
 
@@ -14,47 +14,45 @@ This project was developed as part of a real-world development environment and e
 
 - Java
 - Spring Boot
-- REST APIs
 - PostgreSQL
+- REST APIs
 - JPA / Hibernate
 - Maven
 
 ---
 
-## Key Features
+## Backend Architecture
 
-- Modular backend architecture
-- RESTful API endpoints
-- Data persistence with PostgreSQL
-- Clear separation between domain logic and infrastructure layers
-- DTO-based API communication
+The project follows a modular backend structure separating controllers, services, repositories, and domain logic.
+
+<img src="../assets/screenshots/projects/belgem/backend/project-structure.png" width="700">
 
 ---
 
-## My Role
+## API Endpoints
 
-In this project I worked on:
+Example of REST endpoints implemented in the backend.
 
-- Backend feature implementation
-- REST endpoint development
-- Data modeling
-- Repository and service layers
-- API testing and debugging
+<img src="../assets/screenshots/projects/belgem/backend/api-endpoints.png" width="700">
 
 ---
 
-## Screenshots
+## Database Design
 
-Screenshots of the API, architecture diagrams, or endpoints will be added here.
+Database schema used to structure the system's data.
 
-Example:
+<img src="../assets/screenshots/projects/belgem/database/schema.png" width="700">
 
-![API Endpoints](../assets/screenshots/projects/belgem-api.png)
+---
+
+## Interface Mockups
+
+Preview of the application interface.
+
+<img src="../assets/screenshots/projects/belgem/mockups/interface-preview.png" width="700">
 
 ---
 
 ## Repository
 
-GitHub repository:
-
-[(Add your repository link here)](https://github.com/Alfre-dev2004/Belgem-Backend.git)
+[Backend](https://github.com/Alfre-dev2004/Belgem-Backend.git)
