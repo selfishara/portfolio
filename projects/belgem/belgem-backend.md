@@ -36,7 +36,7 @@ The project follows a modular backend structure separating controllers, services
 
 ## Service Layer
 
-![Service Layer](belgem/backend/service-layer.png)
+![Service Layer](backend/service-layer.png)
 
 ---
 
@@ -44,7 +44,7 @@ The project follows a modular backend structure separating controllers, services
 
 Example of REST endpoints implemented in the backend.
 
-![API Endpoints](belgem/backend/api-endpoints.png)
+![API Endpoints](backend/api-endpoints.png)
 
 ---
 
@@ -52,7 +52,7 @@ Example of REST endpoints implemented in the backend.
 
 Database schema used to structure the system's data.
 
-![Database Schema](belgem/database/supabase-schema.png)
+![Database Schema](database/supabase-schema.png)
 
 ---
 
@@ -60,7 +60,7 @@ Database schema used to structure the system's data.
 
 Preview of the application tables.
 
-![Database Tables](belgem/mockups/belgem-tables.png)
+![Database Tables](mockups/belgem-tables.png)
 ---
 
 ## Repository
