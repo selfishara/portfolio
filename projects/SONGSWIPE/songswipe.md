@@ -58,3 +58,10 @@ In this project I worked on:
 
 GitHub repository:
 (https://github.com/selfishara/song-swipe-frontend.git)
+
+## Branding
+
+Brand manual:
+
+[View Brand Manual]
+https://drive.google.com/file/d/1X_o1-qTB9leQC9tvQzk7xlessgBtjwYr/view?usp=sharing
