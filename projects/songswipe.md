@@ -42,16 +42,19 @@ In this project I worked on:
 
 ## Screenshots
 
-Screenshots of the application will be added here.
+## Screenshots
 
-Example:
+<img src="../assets/screenshots/projects/songswipe/home.png" width="700">
 
-![SongSwipe Home Screen](../assets/screenshots/projects/songswipe-home.png)
+<img src="../assets/screenshots/projects/songswipe/swipe.png" width="700">
 
----
+<img src="../assets/screenshots/projects/songswipe/song-detail.png" width="700">
+
+<img src="../assets/screenshots/projects/songswipe/like.png" width="700">
+
+<img src="../assets/screenshots/projects/songswipe/playlist.png" width="700">
 
 ## Repository
 
 GitHub repository:
-
-(Add your repository link here)
+(https://github.com/selfishara/song-swipe-frontend.git)
