@@ -41,15 +41,15 @@ Example of REST endpoints implemented in the backend.
 
 Database schema used to structure the system's data.
 
-<img src="../assets/screenshots/projects/belgem/database/schema.png" width="700">
+<img src="../assets/screenshots/projects/belgem/database/supabase-schema.png" width="700">
 
 ---
 
 ## Interface Mockups
 
-Preview of the application interface.
+Preview of the application tables.
 
-<img src="../assets/screenshots/projects/belgem/mockups/interface-preview.png" width="700">
+<img src="../assets/screenshots/projects/belgem/mockups/belgem-tables.png" width="700">
 
 ---
 
