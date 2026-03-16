@@ -25,18 +25,18 @@ The goal of the project is to manage business-related data through a structured 
 
 The project follows a modular backend structure separating controllers, services, repositories, and domain logic.
 
-<img src="portfolio/projects/belgem/backend/project-structure.png" width="700">
+![Project Structure](belgem/backend/project-structure.png)
 
 ---
 ## Controller Example
 
-<img src="./belgem/backend/controller-example.png" width="700">
+![Controller Example](belgem/backend/controller-example.png)
 
 ---
 
 ## Service Layer
 
-<img src="./belgem/backend/service-layer.png" width="700">
+![Service Layer](belgem/backend/service-layer.png)
 
 ---
 
@@ -44,7 +44,7 @@ The project follows a modular backend structure separating controllers, services
 
 Example of REST endpoints implemented in the backend.
 
-<img src="./belgem/backend/api-endpoints.png" width="700">
+![API Endpoints](belgem/backend/api-endpoints.png)
 
 ---
 
@@ -52,7 +52,7 @@ Example of REST endpoints implemented in the backend.
 
 Database schema used to structure the system's data.
 
-<img src="./belgem/database/supabase-schema.png" width="700">
+![Database Schema](belgem/database/supabase-schema.png)
 
 ---
 
@@ -60,7 +60,7 @@ Database schema used to structure the system's data.
 
 Preview of the application tables.
 
-<img src="./belgem/mockups/belgem-tables.png" width="700">
+![Database Tables](belgem/mockups/belgem-tables.png)
 ---
 
 ## Repository
