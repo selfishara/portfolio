@@ -1,4 +1,3 @@
-
 # Studio Ghibli API Project
 
 ## Overview
@@ -41,24 +40,21 @@ In this project I worked on:
 
 ---
 
-## API Integration
-
-This project connects to the Studio Ghibli API and processes external data to display it inside the application.
-
-![API Example](api/api-example.png)
-
----
-
 ## User Interface
 
-Screenshots of the application interface will be added here.
+<img src="ui/ghibili-main-ui.PNG" width="350">
+<img src="ui/ghibili-list-ui.PNG" width="350">
 
-![Ghibli Main Screen](ui/main-screen.png)
+<img src="ui/ghibili-list-darkmode-ui.PNG" width="350">
+<img src="ui/fav-list-ui.PNG" width="350">
 
-![Ghibli Detail Screen](ui/detail-screen.png)
+<img src="ui/fav-movie-ui.PNG" width="350">
+<img src="ui/settings-ui.PNG" width="350">
+
+<img src="ui/ghibili-splash-screen-ui.PNG" width="350">
 
 ---
 
 ## Repository
 
-(Add repository link here)
+(Add your repository link here)
