@@ -42,17 +42,10 @@ In this project I worked on:
 
 ## Screenshots
 
-## Screenshots
-
-<img src="../assets/screenshots/projects/songswipe/home.png" width="700">
-
-<img src="../assets/screenshots/projects/songswipe/swipe.png" width="700">
-
-<img src="../assets/screenshots/projects/songswipe/song-detail.png" width="700">
-
-<img src="../assets/screenshots/projects/songswipe/like.png" width="700">
-
-<img src="../assets/screenshots/projects/songswipe/playlist.png" width="700">
+<img src="ui/menu-ui.jpeg" width="400">
+<img src="ui/swipe-ui.jpeg" width="400">
+<img src="ui/song-detail-ui.jpeg" width="400">
+<img src="ui/theme-ui.jpeg" width="400">
 
 ## Repository
 
