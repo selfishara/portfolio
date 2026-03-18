@@ -61,6 +61,8 @@ Alongside programming, I also have a background in design, which allows me to ap
 ### 🎧 SongSwipe
 Android application inspired by swipe-based interaction for music discovery.
 
+<img src="projects/songswipe/gifs/swipe.gif" width="200">
+
 Technologies:
 - Kotlin
 - Jetpack Compose
