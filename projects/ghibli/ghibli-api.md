@@ -1,5 +1,7 @@
 # Studio Ghibli API Project
 
+<img src="gifs/scroll.gif" width="200">
+
 ## Overview
 
 This project was built to consume and display data from the public Studio Ghibli API.
