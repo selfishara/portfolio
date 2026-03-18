@@ -1,5 +1,7 @@
 # Maps App
 
+<img src="gifs/add-marker.gif" width="200">
+
 ## Overview
 
 Maps App is an Android project focused on map-based interaction and mobile user experience.
