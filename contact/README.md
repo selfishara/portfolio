@@ -1,5 +1,5 @@
 You can reach me through:
 
 - GitHub
-- LinkedIn
-- Professional contact information
+- LinkedIn: [(Linkedin)](https://www.linkedin.com/feed/)
+- Email: saramb10.smb@gmail.com
