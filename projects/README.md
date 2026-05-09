@@ -76,7 +76,7 @@ Database design project focused on relational modeling.
 ### 🏋️ GymSpot Lite
 Fitness app built with Kotlin Multiplatform targeting Android, Desktop, Web, and iOS from a single codebase. Browse real exercises, create routines, and execute workouts with sets, reps, and rest timers.
 
-<img src="projects/gymspot-lite/gifs/home.gif" width="200">
+<img src="gymspot-lite/gifs/home.gif" width="500">
 
 - Kotlin Multiplatform & Compose Multiplatform  
 - Supabase Auth & Postgrest  
