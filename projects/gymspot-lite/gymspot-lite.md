@@ -32,7 +32,7 @@ GymSpot Lite is a fitness app built with Kotlin Multiplatform (KMP) and Compose 
 
 ### Home
 
-<img src="gifs/home.gif" width="200">
+<img src="gifs/home.gif" width="500">
 
 Main dashboard with quick access to routines and Quick Start templates.
 
@@ -40,7 +40,7 @@ Main dashboard with quick access to routines and Quick Start templates.
 
 ### Authentication
 
-<img src="gifs/auth.gif" width="200">
+<img src="gifs/auth.gif" width="500">
 
 Email/password login with per-user data isolation via Supabase Row-Level Security.
 
@@ -48,7 +48,7 @@ Email/password login with per-user data isolation via Supabase Row-Level Securit
 
 ### Routines
 
-<img src="gifs/routines.gif" width="200">
+<img src="gifs/routines.gif" width="500">
 
 Create, name, and manage multiple workout routines. All data persisted in Supabase.
 
@@ -56,7 +56,7 @@ Create, name, and manage multiple workout routines. All data persisted in Supaba
 
 ### Exercise Browser
 
-<img src="gifs/explore.gif" width="200">
+<img src="gifs/explore.gif" width="500">
 
 Browse real exercises from the Wger API, organized by muscle group and filterable by language.
 
@@ -64,7 +64,7 @@ Browse real exercises from the Wger API, organized by muscle group and filterabl
 
 ### Exercise Categories
 
-<img src="gifs/categories.gif" width="200">
+<img src="gifs/categories.gif" width="500">
 
 Explore exercises grouped by muscle category with visual cards.
 
@@ -72,7 +72,7 @@ Explore exercises grouped by muscle category with visual cards.
 
 ### Workout Execution
 
-<img src="gifs/workout.gif" width="200">
+<img src="gifs/workout.gif" width="500">
 
 Full workout session with sets/reps tracking, 60-second rest timer, and exercise detail view.
 
@@ -80,7 +80,7 @@ Full workout session with sets/reps tracking, 60-second rest timer, and exercise
 
 ### Settings
 
-<img src="gifs/settings.gif" width="200">
+<img src="gifs/settings.gif" width="500">
 
 User preferences and configuration panel.
 
