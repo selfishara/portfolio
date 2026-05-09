@@ -72,6 +72,21 @@ Technologies:
 
 ---
 
+### 🏋️ GymSpot Lite
+Fitness app built with Kotlin Multiplatform targeting Android, Desktop, Web, and iOS from a single codebase. Browse exercises from the Wger API, create routines, track favorites, and execute workouts with sets, reps, and rest timers.
+
+<img src="projects/gymspot-lite/gifs/home.gif" width="200">
+
+Technologies:
+- Kotlin Multiplatform
+- Compose Multiplatform
+- Supabase
+- Ktor Client
+
+👉 [View Project](projects/gymspot-lite/gymspot-lite.md)
+
+---
+
 ### 💎 Belgem Backend
 Backend system developed with Java and Spring Boot following a modular architecture.
 
