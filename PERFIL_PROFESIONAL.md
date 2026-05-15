@@ -71,8 +71,8 @@ Los proyectos en este repositorio reflejan mi capacidad para:
 
 ¿Tienes una oportunidad o quieres colaborar? Hablemos.
 
-- 🔗 [LinkedIn](#) *(actualizar enlace)*
-- 📧 *(añadir email de contacto)*
+- 🔗 [LinkedIn](#) *((https://www.linkedin.com/in/sara-martinez-bascuas-740b34155/))*
+- 📧 *(saramb10.smb@gmail.com)*
 - 🐙 [GitHub](https://github.com/selfishara)
 
 ---
