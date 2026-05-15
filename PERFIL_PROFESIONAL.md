@@ -15,19 +15,22 @@ Me apasiona construir sistemas escalables, APIs robustas y arquitecturas limpias
 ## 🛠️ Stack técnico
 
 ### Backend & Arquitectura
-- **Lenguajes:** Java · Kotlin
-- **Frameworks:** Spring Boot
-- **Patrones:** Clean Architecture · Microservicios · REST APIs
-- **Bases de datos:** SQL · diseño de esquemas · integración de persistencia
+- **Lenguajes:** Java · Kotlin · SQL
+- **Frameworks:** Spring Boot · JPA/Hibernate
+- **Patrones:** Clean Architecture · Hexagonal Architecture · Microservicios · REST APIs
+
+### Bases de datos
+- PostgreSQL · MySQL · Supabase · Database Modeling
 
 ### Móvil & Multiplataforma
-- Desarrollo **Android nativo** (Kotlin)
-- Aplicaciones multiplataforma
+- Android nativo con **Kotlin + Jetpack Compose**
+- Retrofit · Android Studio
 
-### Otros
-- Automatización de procesos
-- Sistemas escalables
-- Fullstack (cuando el proyecto lo requiere)
+### Herramientas
+- Git · GitHub · IntelliJ IDEA · Postman · Notion
+
+### Diseño
+- Figma · Adobe Tools · UI/UX Design
 
 ---
 
@@ -48,13 +51,34 @@ Estoy buscando mi **primera oportunidad profesional** en:
 
 ## 📂 Proyectos destacados
 
-> *Sección en construcción — próximamente proyectos con descripción, stack y enlaces.*
+### 🏗️ Belgem Backend
+Backend system built with **Java + Spring Boot** using modular clean architecture.
+- REST API design and implementation
+- PostgreSQL database integration and data persistence
+- Hexagonal (Clean) Architecture approach
+- Developed during Backend Developer Internship at Belgem (2025 – present)
 
-Los proyectos en este repositorio reflejan mi capacidad para:
-- Diseñar e implementar arquitecturas desde cero
-- Liderar técnicamente equipos de desarrollo
-- Integrar sistemas, APIs y bases de datos
-- Escalar aplicaciones con buenas prácticas
+`Java` `Spring Boot` `PostgreSQL` `REST API` `Clean Architecture` `JPA/Hibernate`
+
+---
+
+### 🗺️ Maps App
+Android application focused on map interaction and marker management.
+- Built with **Kotlin + Jetpack Compose**
+- Integrated map functionality and user interaction
+- Backend integration with **Supabase**
+
+`Kotlin` `Jetpack Compose` `Supabase` `Android`
+
+---
+
+### 🎵 SongSwipe
+Mobile app inspired by swipe-based interaction for music discovery.
+- Developed with **Kotlin + Jetpack Compose**
+- Focus on UI/UX and interaction design
+- API integration for dynamic content
+
+`Kotlin` `Jetpack Compose` `REST API` `Android` `UI/UX`
 
 ---
 
@@ -71,8 +95,8 @@ Los proyectos en este repositorio reflejan mi capacidad para:
 
 ¿Tienes una oportunidad o quieres colaborar? Hablemos.
 
-- 🔗 [LinkedIn](#) *((https://www.linkedin.com/in/sara-martinez-bascuas-740b34155/))*
-- 📧 *(saramb10.smb@gmail.com)*
+- 🔗 [LinkedIn](https://www.linkedin.com/in/sara-martinez-bascuas-740b34155/)
+- 📧 [saramb10.smb@gmail.com](mailto:saramb10.smb@gmail.com)
 - 🐙 [GitHub](https://github.com/selfishara)
 
 ---
