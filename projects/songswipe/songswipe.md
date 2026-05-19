@@ -1,60 +1,83 @@
-# SongSwipe
+# 🎧 SongSwipe
 
-## Overview
+Android music discovery app built with **Kotlin** and **Clean Architecture**. Users swipe through song recommendations powered by the **Spotify Web API**, save favorites, and get personalized suggestions — built as a collaborative academic project with a team of 9.
 
-SongSwipe is a mobile application inspired by swipe-based interaction patterns for discovering music in a simple and engaging way.
-
-The idea behind the app is similar to swipe mechanics used in modern mobile apps: users can browse songs and quickly interact with them through intuitive gestures.
-
-This project focuses on mobile UI development and modern Android architecture.
+> **My role:** Software Architect — designed and implemented the app's Clean Architecture structure, defined layer boundaries and module organization, and led technical decisions on the Android frontend.
 
 ---
 
-## Technologies Used
+## Tech Stack
 
-- Kotlin
-- Jetpack Compose
-- Android Studio
-- REST APIs
-- Retrofit
+| Layer | Technology |
+|---|---|
+| Language | Kotlin |
+| Architecture | Clean Architecture (Data · Domain · Presentation) |
+| UI | Jetpack Compose |
+| Dependency Injection | Koin |
+| Local DB | Room |
+| Networking | Retrofit + OkHttp |
+| Backend | Supabase |
+| External API | Spotify Web API |
+| Min SDK | Android 8.0 (API 26) |
+
+---
+
+## Architecture
+
+Clean Architecture with strict layer separation — no framework dependencies in the domain layer.
+
+```
+app/src/main/java/
+├── core/           # Config, network, utilities
+├── data/           # DataSources, repositories, mappers
+├── domain/         # Models, use cases, interfaces
+├── presentation/   # UI, ViewModels, activities/fragments
+└── di/             # Koin dependency injection modules
+```
 
 ---
 
 ## Key Features
 
-- Swipe-based interaction for discovering music
-- Clean and modern UI built with Jetpack Compose
-- API integration for music data
-- Responsive and interactive user experience
+- Swipe-based music discovery interface (like/dislike)
+- Spotify API integration for real-time song recommendations
+- Personalized suggestions based on user interaction history
+- Local favorites storage with Room
+- User authentication and cloud sync via Supabase
+- Offline support through local database caching
 
 ---
 
-## My Role
+## My Contributions
 
-In this project I worked on:
-
-- UI implementation using Jetpack Compose
-- Screen structure and layout
-- User interaction design
-- Integration with external APIs
+- Defined and implemented the Clean Architecture structure from scratch
+- Designed the layer boundaries: data, domain, presentation
+- Set up Koin dependency injection modules
+- Implemented core domain use cases and repository interfaces
+- Coordinated technical decisions across the team as Software Architect
 
 ---
 
-## Screenshots
+## Team
 
-<img src="ui/menu-ui.jpeg" width="400">
-<img src="ui/swipe-ui.jpeg" width="400">
-<img src="ui/song-detail-ui.jpeg" width="400">
-<img src="ui/theme-ui.jpeg" width="400">
+9-person academic team (DAM · ILERNA): Product Owners, Scrum Master, Software Architects, UX/UI Designers, DevOps — with full agile workflow including sprints, backlog, and PR-based development.
 
-## Repository
+| Role | Members |
+|---|---|
+| Software Architects | Federico Sánchez Vidarte, **Sara Martínez Bascuas** |
+| UX/UI Designers | Javier Tolosana, Jonathan Villamizar, Bianca Sánchez |
+| Scrum Master / DevOps | Kevin Nahuel Ramírez |
+| Product Owners | Biel Ramos Rifà |
 
-GitHub repository:
-(https://github.com/selfishara/song-swipe-frontend.git)
+---
 
-## Branding
+## Demo
 
-Brand manual:
+![SongSwipe demo](https://raw.githubusercontent.com/selfishara/portfolio/main/projects/songswipe/gifs/swipe.gif)
 
-[View Brand Manual]
-https://drive.google.com/file/d/1X_o1-qTB9leQC9tvQzk7xlessgBtjwYr/view?usp=sharing
+---
+
+## Repositories
+
+- Frontend: [github.com/selfishara/song-swipe-frontend](https://github.com/selfishara/song-swipe-frontend)
+- Docs: [Technical documentation](https://github.com/fedesanchezilerna/song-swipe-docs)
