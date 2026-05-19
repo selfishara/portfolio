@@ -1,108 +1,96 @@
-# GymSpot Lite
+# 🏋️ GymSpot Lite
 
-GymSpot Lite is a fitness app built with Kotlin Multiplatform (KMP) and Compose Multiplatform. Users browse real exercises from the Wger API, create and manage multiple workout routines saved to the cloud, track favorites, and execute workouts with sets, reps, and rest timers. Targets Android, Desktop (JVM), Web (WASM), and iOS from a single shared codebase.
+Fitness app built with **Kotlin Multiplatform (KMP)** and **Compose Multiplatform** — a single shared codebase targeting Android, Desktop (JVM), Web (WASM), and iOS. Users browse real exercises from the Wger API, build routines saved to the cloud, track favorites, and execute workouts with sets, reps, and rest timers.
 
----
-
-## Technologies Used
-
-- Kotlin Multiplatform
-- Compose Multiplatform
-- Ktor Client
-- Supabase (Postgrest + Auth)
-- Navigation 3 (JetBrains)
-- Kotlinx Serialization
-- Kotlin Coroutines
+> **My role:** Solo developer — architecture, implementation, and deployment across all platforms.
 
 ---
 
-## Key Features
+## Tech Stack
 
-- Exercise browsing with real Wger API data, filtered by language (EN/ES) and organized by muscle group
-- Multiple routines per user — create, name, manage, and delete; all persisted in Supabase
-- Full workout execution: sets/reps tracking, 60s rest timer, and completion summary
-- Favorites system — save exercises and access them from your profile
-- Supabase Auth: email/password login with per-user data isolation via Row-Level Security
-- Quick Start templates: Push Day, Pull Day, Leg Day, Full Body, Upper Body, Core Blast
-- English and Spanish exercise libraries
-
----
-
-## App Demo
-
-### Home
-
-<img src="gifs/home.gif" width="500">
-
-Main dashboard with quick access to routines and Quick Start templates.
-
----
-
-### Authentication
-
-<img src="gifs/auth.gif" width="500">
-
-Email/password login with per-user data isolation via Supabase Row-Level Security.
-
----
-
-### Routines
-
-<img src="gifs/routines.gif" width="500">
-
-Create, name, and manage multiple workout routines. All data persisted in Supabase.
-
----
-
-### Exercise Browser
-
-<img src="gifs/explore.gif" width="500">
-
-Browse real exercises from the Wger API, organized by muscle group and filterable by language.
-
----
-
-### Exercise Categories
-
-<img src="gifs/categories.gif" width="500">
-
-Explore exercises grouped by muscle category with visual cards.
-
----
-
-### Workout Execution
-
-<img src="gifs/workout.gif" width="500">
-
-Full workout session with sets/reps tracking, 60-second rest timer, and exercise detail view.
-
----
-
-### Settings
-
-<img src="gifs/settings.gif" width="500">
-
-User preferences and configuration panel.
+| Library | Version | Role |
+|---|---|---|
+| Kotlin Multiplatform | 2.x | Shared logic across all targets |
+| Compose Multiplatform | 1.10.3 | Unified UI: Android, Desktop, Web, iOS |
+| Navigation 3 (JetBrains) | 1.0.0-alpha06 | Back-stack navigation with serializable routes |
+| Ktor Client | 3.4.2 | HTTP — Wger API |
+| Supabase (Postgrest + Auth) | 3.2.2 | Cloud DB + user authentication |
+| Kotlinx Serialization | 1.10.0 | Routes + JSON DTOs |
+| Kotlin Coroutines | 1.10.2 | Async data loading |
 
 ---
 
 ## Architecture
 
-Clean layer separation: remote API → sync service → Supabase cache → domain state → UI. All business logic lives in commonMain with platform specifics isolated to each target. State management uses MVP-grade Compose singletons exposing read-only views and mutating only through named methods.
+```
+commonMain/kotlin/
+├── data/
+│   ├── remote/       # Wger API (Ktor): WgerApi, WgerDataSource, WgerExerciseRepository
+│   ├── supabase/     # Exercises cache, routines, favorites, auth session
+│   ├── sync/         # ExerciseSyncService — Supabase-first, Wger fallback
+│   └── dto/ + mapper/
+├── model/            # Exercise, Routine, RoutineTemplate, MuscleGroup, ExerciseLanguage
+├── state/            # AuthState, RoutineState, RoutinesListState, FavoritesState,
+│                     #   AppSettingsState, WorkoutSessionState
+├── navigation/       # Navigation3 routes + NavigationWrapper
+└── screens/ + components/
+```
+
+**Data flows:**
+- Exercises: language change → `ExerciseSyncService` checks Supabase; on miss, fetches Wger API and upserts to cloud
+- Routines: login → `loadAll(userId)` → every mutation syncs to Supabase immediately
+
+**State:** Compose singletons (`mutableStateOf`, `mutableStateListOf`) — no ViewModel layer, state objects expose read-only views and mutate through named methods only.
 
 ---
 
-## My Role
+## Features
 
-- Full-stack KMP architecture design and implementation
-- Wger API integration with DTO + mapper system and paginated fetch
-- Supabase schema design (exercises, routines, routine_exercises, favorites) with RLS policies
-- Authentication flow and persistent session management across platforms
-- Compose Multiplatform UI with custom dark design system (GymSpot design language)
-- CI pipeline on GitHub Actions
+- Browse real exercises from the Wger API, filtered by language (EN/ES) and muscle group
+- Create, name, and manage multiple workout routines saved per user to the cloud
+- Execute workouts with sets/reps tracking, 60s rest timer, and completion summary
+- Save exercises to favorites, accessible from your profile
+- Supabase email/password authentication — each user's data fully isolated with Row-Level Security
+- Quick Start Templates: Push Day, Pull Day, Leg Day, Full Body, Upper Body, Core Blast
+
+---
+
+## Database Schema (Supabase)
+
+| Table | Purpose |
+|---|---|
+| `exercises` | Language-keyed exercise cache from Wger API |
+| `routines` | Named routines per user (`session_id = auth.uid()`) |
+| `routine_exercises` | Exercises within each routine, ordered by position |
+| `favorites` | User's saved exercises |
+
+Row-Level Security enabled on all user tables.
+
+---
+
+## Demo
+
+![GymSpot Lite demo](https://raw.githubusercontent.com/selfishara/portfolio/main/projects/gymspot-lite/gifs/home.gif)
+
+---
+
+## Build & Run
+
+```bash
+# Desktop (JVM)
+./gradlew :composeApp:run
+
+# Android debug APK
+./gradlew :composeApp:assembleDebug
+
+# Web (WASM)
+./gradlew :composeApp:wasmJsBrowserDevelopmentRun
+```
+
+iOS: open `iosApp/iosApp.xcodeproj` in Xcode. Requires JDK 17.
 
 ---
 
 ## Repository
 
-[View on GitHub](https://github.com/selfishara/MULTIPLATFORM)
+[github.com/selfishara/MULTIPLATFORM](https://github.com/selfishara/MULTIPLATFORM)
