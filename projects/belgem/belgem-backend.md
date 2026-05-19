@@ -25,7 +25,7 @@ Backend of the **Belgem ERP system** — a business management platform develope
 
 The project follows a **modular monolith** based on **hexagonal (clean) architecture** principles — domain logic has zero external dependencies, adapters handle all I/O.
 
-![Hexagonal Architecture](architecture.png)
+![Hexagonal Architecture](https://raw.githubusercontent.com/selfishara/portfolio/main/projects/belgem/backend/architecture.png)
 
 ---
 
@@ -33,7 +33,7 @@ The project follows a **modular monolith** based on **hexagonal (clean) architec
 
 PostgreSQL schema `v1` with core ERP entities.
 
-![Data Model](data-model.png)
+![Data Model](https://raw.githubusercontent.com/selfishara/portfolio/main/projects/belgem/backend/data-model.png)
 
 ---
 
@@ -41,7 +41,7 @@ PostgreSQL schema `v1` with core ERP entities.
 
 71 automated pipeline runs on GitHub Actions — triggered on every push and pull request, including feature branches.
 
-![CI/CD Pipeline](ci-pipeline.png)
+![CI/CD Pipeline](https://raw.githubusercontent.com/selfishara/portfolio/main/projects/belgem/backend/CICD_Belgem.png)
 
 ---
 
