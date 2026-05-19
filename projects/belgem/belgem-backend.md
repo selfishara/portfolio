@@ -16,28 +16,32 @@ Backend of the **Belgem ERP system** — a business management platform develope
 | ORM | JPA / Hibernate | Data layer |
 | Build | Maven | Dependency management |
 | Testing | JUnit | Automated testing |
-| CI/CD | GitHub Actions | Continuous integration pipeline |
-| Version control | GitHub | Central repo with branch-based workflow |
+| CI/CD | GitHub Actions | 71 pipeline runs, all passing |
+| Version control | GitHub | Branch-based workflow with PRs |
 
 ---
 
 ## Architecture
 
-The project follows a **modular monolith** structure based on **hexagonal (clean) architecture** principles, separating domain logic, application services, and infrastructure concerns.
+The project follows a **modular monolith** based on **hexagonal (clean) architecture** principles — domain logic has zero external dependencies, adapters handle all I/O.
 
-```
-src/
-└── main/
-    └── java/
-        └── com.belgem/
-            ├── domain/          # Business entities and rules
-            ├── application/     # Use cases and services
-            ├── infrastructure/  # Controllers, repositories, config
-            │   ├── controller/
-            │   ├── repository/
-            │   └── security/
-            └── BelgemApplication.java
-```
+![Hexagonal Architecture](architecture.png)
+
+---
+
+## Database Model
+
+PostgreSQL schema `v1` with core ERP entities.
+
+![Data Model](data-model.png)
+
+---
+
+## CI/CD Pipeline
+
+71 automated pipeline runs on GitHub Actions — triggered on every push and pull request, including feature branches.
+
+![CI/CD Pipeline](ci-pipeline.png)
 
 ---
 
@@ -47,18 +51,18 @@ src/
 - RESTful API design with structured endpoints per business module
 - Clean separation between domain logic and infrastructure
 - PostgreSQL integration with JPA/Hibernate for data persistence
-- CI/CD pipeline with GitHub Actions for automated build and integration checks
-- Modular structure enabling independent development across team members
+- CI/CD pipeline with GitHub Actions — 71 runs, all green
+- Feature branch workflow with pull request reviews
 
 ---
 
 ## My Contributions
 
 - Co-led technical direction alongside the other team lead
-- Implemented backend modules including business logic, service layer, and REST controllers
-- Contributed to architecture decisions: module structure, layering approach, naming conventions
+- Implemented backend modules: business logic, service layer, REST controllers
+- Contributed to architecture decisions: module structure, layering, naming conventions
 - Coordinated tasks and pull request reviews across the backend team
-- Set up and maintained the development workflow on GitHub (branches, PRs, CI)
+- Set up and maintained development workflow on GitHub
 
 ---
 
@@ -68,20 +72,6 @@ src/
 
 ---
 
-## What to look at
-
-- **`src/`** — full project structure showing hexagonal layering
-- **`.github/workflows/`** — CI/CD pipeline configuration
-- **`docs/`** — additional project documentation
-
----
-
 ## Repository
 
 [github.com/Alfre-dev2004/Belgem-Backend](https://github.com/Alfre-dev2004/Belgem-Backend)
-
----
-
-## Screenshots
-
-> *(Add here: Postman/Swagger endpoint list, IntelliJ project structure view, GitHub Actions pipeline passing)*
