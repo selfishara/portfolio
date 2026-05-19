@@ -1,68 +1,87 @@
-# Belgem Backend
+# 💎 Belgem Backend
 
-## Overview
+Backend of the **Belgem ERP system** — a business management platform developed with Java 17, Spring Boot, and PostgreSQL, following a modular hexagonal architecture.
 
-Belgem Backend is a backend system developed with Java and Spring Boot, focused on building a modular and scalable API architecture.
-
-The project follows clean backend development practices, separating business logic, persistence, and API layers to maintain a clear and maintainable structure.
-
-The goal of the project is to manage business-related data through a structured backend system.
+> **My role:** Co-technical lead and backend developer. I co-led a team of 7 developers (5 backend, 2 frontend), contributed to architectural decisions, implemented core backend modules, and coordinated development workflows alongside the other team lead.
 
 ---
 
-## Technologies Used
+## Tech Stack
 
-- Java
-- Spring Boot
-- PostgreSQL
-- REST APIs
-- JPA / Hibernate
-- Maven
-
----
-
-## Backend Architecture
-
-The project follows a modular backend structure separating controllers, services, repositories, and domain logic.
-
-![Project Structure](backend/project-structure.png)
-
----
-## Controller Example
-
-![Controller Example](backend/controller-example.png)
+| Layer | Technology | Notes |
+|---|---|---|
+| Backend | Java 17 + Spring Boot | Main framework |
+| Security | Spring Security + JWT | Token-based auth |
+| Database | PostgreSQL + Supabase | Local persistence + remote collaboration |
+| ORM | JPA / Hibernate | Data layer |
+| Build | Maven | Dependency management |
+| Testing | JUnit | Automated testing |
+| CI/CD | GitHub Actions | Continuous integration pipeline |
+| Version control | GitHub | Central repo with branch-based workflow |
 
 ---
 
-## Service Layer
+## Architecture
 
-![Service Layer](backend/service-layer.png)
+The project follows a **modular monolith** structure based on **hexagonal (clean) architecture** principles, separating domain logic, application services, and infrastructure concerns.
 
----
-
-## API Endpoints
-
-Example of REST endpoints implemented in the backend.
-
-![API Endpoints](backend/api-endpoints.png)
-
----
-
-## Database Design
-
-Database schema used to structure the system's data.
-
-![Database Schema](database/supabase-schema.png)
+```
+src/
+└── main/
+    └── java/
+        └── com.belgem/
+            ├── domain/          # Business entities and rules
+            ├── application/     # Use cases and services
+            ├── infrastructure/  # Controllers, repositories, config
+            │   ├── controller/
+            │   ├── repository/
+            │   └── security/
+            └── BelgemApplication.java
+```
 
 ---
 
-## Database Tables (Supabase)
+## Key Features
 
-Preview of the application tables.
+- JWT-based authentication and authorization via Spring Security
+- RESTful API design with structured endpoints per business module
+- Clean separation between domain logic and infrastructure
+- PostgreSQL integration with JPA/Hibernate for data persistence
+- CI/CD pipeline with GitHub Actions for automated build and integration checks
+- Modular structure enabling independent development across team members
 
-![Database Tables](mockups/belgem-tables.png)
+---
+
+## My Contributions
+
+- Co-led technical direction alongside the other team lead
+- Implemented backend modules including business logic, service layer, and REST controllers
+- Contributed to architecture decisions: module structure, layering approach, naming conventions
+- Coordinated tasks and pull request reviews across the backend team
+- Set up and maintained the development workflow on GitHub (branches, PRs, CI)
+
+---
+
+## Team
+
+7-person cross-functional team: 5 backend developers (DAM) + 2 frontend developers (DAW), co-led by Alfredo Noriega and Sara Martínez.
+
+---
+
+## What to look at
+
+- **`src/`** — full project structure showing hexagonal layering
+- **`.github/workflows/`** — CI/CD pipeline configuration
+- **`docs/`** — additional project documentation
+
 ---
 
 ## Repository
 
-[Backend](https://github.com/Alfre-dev2004/Belgem-Backend.git)
+[github.com/Alfre-dev2004/Belgem-Backend](https://github.com/Alfre-dev2004/Belgem-Backend)
+
+---
+
+## Screenshots
+
+> *(Add here: Postman/Swagger endpoint list, IntelliJ project structure view, GitHub Actions pipeline passing)*
