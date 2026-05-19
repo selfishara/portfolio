@@ -23,96 +23,73 @@ Backend and mobile developer building real-world applications with clean archite
 ### Mobile
 [![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)]()
 [![Jetpack Compose](https://img.shields.io/badge/Jetpack_Compose-4285F4?style=for-the-badge&logo=android&logoColor=white)]()
+[![KMP](https://img.shields.io/badge/Kotlin_Multiplatform-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)]()
 [![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=androidstudio&logoColor=white)]()
-[![Retrofit](https://img.shields.io/badge/Retrofit-000000?style=for-the-badge)]()
 
 ### Database
-[![SQL](https://img.shields.io/badge/SQL-003B57?style=for-the-badge)]()
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)]()
 [![MySQL](https://img.shields.io/badge/MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white)]()
-[![Database Design](https://img.shields.io/badge/Database_Modeling-000000?style=for-the-badge)]()
-
-### Design
-[![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)]()
-[![Adobe](https://img.shields.io/badge/Adobe-FF0000?style=for-the-badge&logo=adobe&logoColor=white)]()
-[![UI/UX](https://img.shields.io/badge/UI/UX-000000?style=for-the-badge)]()
+[![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)]()
 
 ### Tools
 [![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)]()
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)]()
 [![IntelliJ](https://img.shields.io/badge/IntelliJ_IDEA-000000?style=for-the-badge&logo=intellijidea&logoColor=white)]()
-[![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=androidstudio&logoColor=white)]()
 [![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)]()
-[![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white)]()
+
+### Design
+[![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)]()
+[![Adobe](https://img.shields.io/badge/Adobe-FF0000?style=for-the-badge&logo=adobe&logoColor=white)]()
 
 ---
 
 ## About Me
 
-Backend developer with hands-on experience building production systems using Java, Spring Boot, and Kotlin. I recently graduated in Multiplatform Application Development (DAM) and I'm currently working as a Backend Developer Intern at Belgem, where I design and implement modular REST APIs, apply clean (hexagonal) architecture principles, and work with PostgreSQL for data persistence.
+Backend developer with hands-on experience building production systems using Java, Spring Boot, and Kotlin. Graduated in Multiplatform Application Development (DAM) and currently working as Backend Developer Intern at Belgem, where I design and implement modular REST APIs, apply hexagonal architecture principles, and work with PostgreSQL for data persistence.
 
-I care about writing maintainable, well-structured code and building systems that scale. Alongside backend development, I also build Android apps with Kotlin and Jetpack Compose, and I bring a design background that helps me approach products from both a technical and visual perspective.
+I care about writing maintainable, well-structured code and building systems that scale. I also build cross-platform apps with Kotlin Multiplatform and Compose Multiplatform, and I bring a design background that helps me approach products from both a technical and visual perspective.
 
-I'm looking for my next opportunity in backend development, software engineering, or Android — based in Barcelona, remote or hybrid.
+Open to backend, software engineering, or Android roles — Barcelona, remote, or hybrid.
 
 ---
 
 ## 🚀 Featured Projects
 
-### 🎧 SongSwipe
+### 💎 Belgem Backend
+Production ERP backend built with Java 17 + Spring Boot, hexagonal architecture, Spring Security + JWT, PostgreSQL, and GitHub Actions CI/CD. Co-led a team of 7 developers as technical lead.
 
-Android application inspired by swipe-based interaction for music discovery.
+`Java` `Spring Boot` `PostgreSQL` `Clean Architecture` `JWT` `GitHub Actions`
 
-![SongSwipe demo](projects/songswipe/gifs/swipe.gif)
-
-Technologies:
-- Kotlin
-- Jetpack Compose
-- REST APIs
-
-👉 [View Project](projects/songswipe/songswipe.md)
+👉 [View Project](projects/belgem/belgem-backend.md) · [Repository](https://github.com/Alfre-dev2004/Belgem-Backend)
 
 ---
 
 ### 🏋️ GymSpot Lite
+Fitness app built with Kotlin Multiplatform — single codebase targeting Android, Desktop, Web, and iOS. Real exercises from the Wger API, cloud routines via Supabase, workout execution with rest timers.
 
-Fitness app built with Kotlin Multiplatform targeting Android, Desktop, Web, and iOS from a single codebase. Browse exercises from the Wger API, create routines, track favorites, and execute workouts with sets, reps, and rest timers.
+`Kotlin Multiplatform` `Compose Multiplatform` `Supabase` `Ktor` `KMP`
 
-![GymSpot Lite demo](projects/gymspot-lite/gifs/home.gif)
+![GymSpot Lite](https://raw.githubusercontent.com/selfishara/portfolio/main/projects/gymspot-lite/gifs/home.gif)
 
-Technologies:
-- Kotlin Multiplatform
-- Compose Multiplatform
-- Supabase
-- Ktor Client
-
-👉 [View Project](projects/gymspot-lite/gymspot-lite.md)
+👉 [View Project](projects/gymspot-lite/gymspot-lite.md) · [Repository](https://github.com/selfishara/MULTIPLATFORM)
 
 ---
 
-### 💎 Belgem Backend
+### 🎧 SongSwipe
+Music discovery Android app with swipe interaction, Spotify API integration, and Clean Architecture. Software Architect in a 9-person team with full agile workflow (313 commits, sprints, PRs).
 
-Backend system developed with Java and Spring Boot following a modular clean architecture, built during my internship at Belgem.
+`Kotlin` `Jetpack Compose` `Clean Architecture` `Koin` `Room` `Spotify API` `Supabase`
 
-Technologies:
-- Java
-- Spring Boot
-- PostgreSQL
-- REST API
-- Clean Architecture (Hexagonal)
+![SongSwipe](https://raw.githubusercontent.com/selfishara/portfolio/main/projects/songswipe/gifs/swipe.gif)
 
-👉 [View Project](projects/belgem/belgem-backend.md)
+👉 [View Project](projects/songswipe/songswipe.md) · [Repository](https://github.com/selfishara/song-swipe-frontend)
 
 ---
 
-### 🏋️ Gym BDOR
+### 🗄️ Gym BDOR
+Complete gym management system database — full relational model with PostgreSQL.
 
-Database project focused on modeling a complete gym management system.
-
-Technologies:
-- SQL
-- PostgreSQL
-- Database Design
+`SQL` `PostgreSQL` `Database Design`
 
 👉 [View Project](projects/gym-bdor/gym-bdor.md)
 
@@ -120,7 +97,7 @@ Technologies:
 
 ## 🎨 Design Work
 
-This portfolio also includes visual and product-related work created with Figma and Adobe tools.
+Visual and product-related work created with Figma and Adobe tools.
 
 👉 [View Design Work](design)
 
@@ -128,7 +105,7 @@ This portfolio also includes visual and product-related work created with Figma 
 
 ## 📄 CV
 
-👉 [View CV](cv)
+👉 [View CV](cv/Sara%20Martínez%20-%20CV.pdf)
 
 ---
 
