@@ -1,5 +1,4 @@
 # 🎧 SongSwipe
-
 Android music discovery app built with **Kotlin** and **Clean Architecture**. Users swipe through song recommendations powered by the **Spotify Web API**, save favorites, and get personalized suggestions — built as a collaborative academic project with a team of 9.
 
 > **My role:** Software Architect — designed and implemented the app's Clean Architecture structure, defined layer boundaries and module organization, and led technical decisions on the Android frontend.
@@ -37,6 +36,25 @@ app/src/main/java/
 
 ---
 
+## Demo
+
+![Swipe interaction](https://raw.githubusercontent.com/selfishara/portfolio/main/projects/songswipe/gifs/swipe.gif)
+![Vibe selection](https://raw.githubusercontent.com/selfishara/portfolio/main/projects/songswipe/gifs/vibe.gif)
+![Playlists](https://raw.githubusercontent.com/selfishara/portfolio/main/projects/songswipe/gifs/playlists.gif)
+
+---
+
+## Screenshots
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/selfishara/portfolio/main/projects/songswipe/gifs/screenshot_vibe.png" width="23%"/>
+  <img src="https://raw.githubusercontent.com/selfishara/portfolio/main/projects/songswipe/gifs/screenshot_swipe.png" width="23%"/>
+  <img src="https://raw.githubusercontent.com/selfishara/portfolio/main/projects/songswipe/gifs/screenshot_card.png" width="23%"/>
+  <img src="https://raw.githubusercontent.com/selfishara/portfolio/main/projects/songswipe/gifs/screenshot_playlist.png" width="23%"/>
+</p>
+
+---
+
 ## Key Features
 
 - Swipe-based music discovery interface (like/dislike)
@@ -68,12 +86,6 @@ app/src/main/java/
 | UX/UI Designers | Javier Tolosana, Jonathan Villamizar, Bianca Sánchez |
 | Scrum Master / DevOps | Kevin Nahuel Ramírez |
 | Product Owners | Biel Ramos Rifà |
-
----
-
-## Demo
-
-![SongSwipe demo](https://raw.githubusercontent.com/selfishara/portfolio/main/projects/songswipe/gifs/swipe.gif)
 
 ---
 
