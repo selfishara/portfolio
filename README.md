@@ -38,7 +38,7 @@ Backend and mobile developer building real-world applications with clean archite
 [![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)]()
 
 ### Design
-[![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)]()
+[![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=adobe&logoColor=white)]()
 [![Adobe](https://img.shields.io/badge/Adobe-FF0000?style=for-the-badge&logo=adobe&logoColor=white)]()
 
 ---
@@ -80,7 +80,12 @@ Music discovery Android app with swipe interaction, Spotify API integration, and
 
 `Kotlin` `Jetpack Compose` `Clean Architecture` `Koin` `Room` `Spotify API` `Supabase`
 
-![SongSwipe](https://raw.githubusercontent.com/selfishara/portfolio/main/projects/songswipe/gifs/swipe.gif)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/selfishara/portfolio/main/projects/songswipe/gifs/screenshot_vibe.png" width="22%"/>
+  <img src="https://raw.githubusercontent.com/selfishara/portfolio/main/projects/songswipe/gifs/screenshot_swipe.png" width="22%"/>
+  <img src="https://raw.githubusercontent.com/selfishara/portfolio/main/projects/songswipe/gifs/screenshot_card.png" width="22%"/>
+  <img src="https://raw.githubusercontent.com/selfishara/portfolio/main/projects/songswipe/gifs/screenshot_playlist.png" width="22%"/>
+</p>
 
 👉 [View Project](projects/songswipe/songswipe.md) · [Repository](https://github.com/selfishara/song-swipe-frontend)
 
