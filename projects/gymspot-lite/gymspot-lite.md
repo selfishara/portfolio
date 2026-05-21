@@ -44,6 +44,25 @@ commonMain/kotlin/
 
 ---
 
+## Demo
+
+![Explore](https://raw.githubusercontent.com/selfishara/portfolio/main/projects/gymspot-lite/gifs/explore.gif)
+![Exercise detail](https://raw.githubusercontent.com/selfishara/portfolio/main/projects/gymspot-lite/gifs/exercise.gif)
+![Workout execution](https://raw.githubusercontent.com/selfishara/portfolio/main/projects/gymspot-lite/gifs/workout.gif)
+
+---
+
+## Screenshots
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/selfishara/portfolio/main/projects/gymspot-lite/gifs/screenshot_explore.png" width="22%"/>
+  <img src="https://raw.githubusercontent.com/selfishara/portfolio/main/projects/gymspot-lite/gifs/screenshot_exercise.png" width="22%"/>
+  <img src="https://raw.githubusercontent.com/selfishara/portfolio/main/projects/gymspot-lite/gifs/screenshot_workout.png" width="22%"/>
+  <img src="https://raw.githubusercontent.com/selfishara/portfolio/main/projects/gymspot-lite/gifs/screenshot_routines.png" width="22%"/>
+</p>
+
+---
+
 ## Features
 
 - Browse real exercises from the Wger API, filtered by language (EN/ES) and muscle group
@@ -65,12 +84,6 @@ commonMain/kotlin/
 | `favorites` | User's saved exercises |
 
 Row-Level Security enabled on all user tables.
-
----
-
-## Demo
-
-![GymSpot Lite demo](https://raw.githubusercontent.com/selfishara/portfolio/main/projects/gymspot-lite/gifs/home.gif)
 
 ---
 
