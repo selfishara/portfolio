@@ -69,7 +69,12 @@ Fitness app built with Kotlin Multiplatform — single codebase targeting Androi
 
 `Kotlin Multiplatform` `Compose Multiplatform` `Supabase` `Ktor` `KMP`
 
-![GymSpot Lite](https://raw.githubusercontent.com/selfishara/portfolio/main/projects/gymspot-lite/gifs/home.gif)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/selfishara/portfolio/main/projects/gymspot-lite/gifs/screenshot_explore.png" width="22%"/>
+  <img src="https://raw.githubusercontent.com/selfishara/portfolio/main/projects/gymspot-lite/gifs/screenshot_exercise.png" width="22%"/>
+  <img src="https://raw.githubusercontent.com/selfishara/portfolio/main/projects/gymspot-lite/gifs/screenshot_workout.png" width="22%"/>
+  <img src="https://raw.githubusercontent.com/selfishara/portfolio/main/projects/gymspot-lite/gifs/screenshot_routines.png" width="22%"/>
+</p>
 
 👉 [View Project](projects/gymspot-lite/gymspot-lite.md) · [Repository](https://github.com/selfishara/MULTIPLATFORM)
 
