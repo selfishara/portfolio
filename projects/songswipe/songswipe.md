@@ -38,7 +38,6 @@ app/src/main/java/
 
 ## Demo
 
-![Swipe interaction](https://raw.githubusercontent.com/selfishara/portfolio/main/projects/songswipe/gifs/swipe.gif)
 ![Vibe selection](https://raw.githubusercontent.com/selfishara/portfolio/main/projects/songswipe/gifs/vibe.gif)
 ![Playlists](https://raw.githubusercontent.com/selfishara/portfolio/main/projects/songswipe/gifs/playlists.gif)
 
