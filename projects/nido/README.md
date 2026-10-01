@@ -1,64 +1,77 @@
-# 🏠 Nido — vivienda y dinero para gente joven
+# 🏠 Nido — housing & money for young people
 
-> **Estado:** 🟡 Sprint 0 · Descubrimiento · *(nombre provisional)*
+> **Status:** 🟡 Sprint 0 · Discovery · *(working name)*
 
-Nido ayuda a gente joven a **encontrar piso sin que la estafen** y a **entender y organizar su dinero** para poder independizarse.
-Es una app **móvil y web**: Android, iOS y web con Kotlin Multiplatform, y backend en Spring Boot.
+Nido helps young people **find a place to rent without getting scammed** and **understand and organise their money** so they can move out.
+**Mobile + web** app (Android · iOS · Web) built with Kotlin Multiplatform and a Spring Boot backend.
 
 ---
 
-## 🎯 El problema
+## 🎯 The problem
 
-Independizarse siendo joven en España combina dos problemas que se alimentan entre sí:
+Moving out as a young person in Spain mixes two problems that feed each other:
 
-1. **Vivienda**: alquileres que se comen buena parte del sueldo, mucha competencia por cada piso y **estafas en anuncios** (pagar la señal sin haber visto el piso, propietarios "en el extranjero", anuncios clonados) y contratos con cláusulas abusivas que casi nadie revisa.
-2. **Dinero**: primeros sueldos, nóminas que no se entienden, poca cultura financiera y ninguna herramienta que responda a *"¿me puedo permitir este piso?"*
+1. **Housing**: rents that eat a large share of your salary, fierce competition for each flat, **rental scams** (pay the deposit before seeing the flat, landlord "living abroad", cloned listings) and contracts with abusive clauses nobody reviews.
+2. **Money**: first salaries, payslips nobody understands, little financial literacy and no tool that answers *"can I afford this flat?"*
 
-> 📌 Las cifras concretas (esfuerzo salarial, edad de emancipación, volumen de estafas) se investigan en el **Sprint 0** ([spikes S0-1 y S0-2](docs/backlog.md#sprint-0--descubrimiento)) y se citan aquí con sus fuentes.
+> 📌 Specific figures (rent-to-income ratio, emancipation age, scam volume) are researched in **Sprint 0** ([spikes S0-1 and S0-2](docs/backlog.md#sprint-0--discovery)) and cited here with sources.
 
-## 💡 La propuesta
+## 💡 The proposal
 
-| Módulo | Qué hace | Tecnología clave |
+| Module | What it does | Key tech |
 |---|---|---|
-| 💸 **Mi dinero** | Ingresos, gastos, objetivo de ahorro (fianza, mudanza) y **% de esfuerzo** del alquiler | Backend con lógica de dominio |
-| 🚩 **Detector de estafas** | Pegas un anuncio o una URL y recibes una puntuación de riesgo con sus motivos | IA con salida estructurada y reglas |
-| 📄 **Revisor de contratos** | Subes el contrato y te marca las cláusulas dudosas según la LAU | RAG con pgvector |
-| 🧾 **Explicador de nómina** | Te explica la nómina línea a línea (IRPF, Seguridad Social) | IA y privacidad desde el diseño |
-| 🎁 **Ayudas** | Ayudas al alquiler a las que podrías optar | Datos abiertos y APIs |
+| 💸 **My money** | Income, expenses, savings goal (deposit, moving costs) and **rent-to-income ratio** | Backend domain logic |
+| 🚩 **Scam detector** | Paste a listing or URL → risk score with reasons | AI with structured output + rules |
+| 📄 **Contract reviewer** | Upload your lease → flags dubious clauses under Spanish tenancy law (LAU) | RAG with pgvector |
+| 🧾 **Payslip explainer** | Explains your payslip line by line (income tax, social security) | AI + privacy by design |
+| 🎁 **Grants** | Rental grants you may qualify for | Open data / APIs |
 
-## 🧱 Arquitectura prevista
+## 🧱 Planned architecture
 
 ```
  Android ─┐
- iOS ─────┼── Compose Multiplatform (KMP) ──HTTPS + OAuth2/OIDC (PKCE)──▶ API Spring Boot (hexagonal)
+ iOS ─────┼── Compose Multiplatform (KMP) ──HTTPS + OAuth2/OIDC (PKCE)──▶ Spring Boot API (hexagonal)
  Web ─────┘                                                              │
                                                                          ├── PostgreSQL + pgvector
-                                                                         ├── API de Claude (IA)
-                                                                         └── APIs de datos abiertos
+                                                                         ├── Claude API (AI)
+                                                                         └── Open data APIs
 ```
 
-Decisiones de arquitectura documentadas en [`docs/adr`](docs/adr).
+Architecture decisions live in [`docs/adr`](docs/adr).
 
-## 🔐 La seguridad como eje del proyecto
+## 🔐 Security at the core
 
-Nido trata datos sensibles (nóminas, DNI, contratos), así que la seguridad es una pieza central:
+Nido handles sensitive data (payslips, IDs, contracts), so security is a central piece of the design:
 
-- OAuth2/OIDC con PKCE, tokens de vida corta y rotación de *refresh tokens*
-- Modelo de amenazas STRIDE por cada módulo
-- OWASP Top 10 y **OWASP Top 10 para aplicaciones LLM** (inyección de prompts a través de contratos o anuncios)
-- Cumplimiento del RGPD: minimización de datos, cifrado y derecho al olvido
-- Análisis estático, escaneo de dependencias y de secretos en el CI
+- OAuth2/OIDC with PKCE, short-lived tokens, refresh token rotation
+- STRIDE threat model per module
+- OWASP Top 10 + **OWASP Top 10 for LLM applications** (prompt injection via contracts or listings)
+- GDPR: data minimisation, encryption, right to erasure
+- SAST, dependency scanning and secret scanning in CI
 
-## 🗂️ Cómo se trabaja
+## 🗂️ How it's built
 
-- **Metodología:** Scrum adaptado a una persona, con sprints de 2 semanas
-- **Backlog:** GitHub Projects ([guía de configuración](docs/github-projects-guide.md))
-- **Bitácora:** [diario del proceso](docs/bitacora.md), con capturas para LinkedIn
-- **IA en el desarrollo:** Claude Code con `CLAUDE.md`, skills propias y subagentes
+- **Methodology:** Scrum adapted for a solo developer · 2-week sprints
+- **Spec-Driven Development:** every feature starts as a spec → [`specs/`](specs)
+- **Backlog:** GitHub Projects ([setup guide](docs/github-projects-guide.md))
+- **Process log:** [process log](docs/process-log.md) with screenshots
+- **Learning notes:** theory + practice of every concept applied → [`docs/learning`](docs/learning)
+- **AI-assisted dev:** Claude Code with `CLAUDE.md`, custom skills and subagents
 
-## 📚 Documentación
+## 🛠️ Tooling
 
-- [Backlog inicial y épicas](docs/backlog.md)
-- [Guía de GitHub Projects](docs/github-projects-guide.md)
-- [ADRs (decisiones de arquitectura)](docs/adr)
-- [Bitácora del proceso](docs/bitacora.md)
+| Tool | Used for |
+|---|---|
+| **IntelliJ IDEA** | Backend (Java · Spring Boot · Gradle · DB tools) |
+| **Android Studio** | KMP client, Android emulator |
+| **Terminal** | Git, Docker, Gradle |
+| **VS Code** *(optional)* | Quick edits to Markdown/YAML |
+
+## 📚 Docs
+
+- [Initial backlog & epics](docs/backlog.md)
+- [GitHub Projects guide](docs/github-projects-guide.md)
+- [Specs (SDD)](specs)
+- [ADRs](docs/adr)
+- [Process log](docs/process-log.md)
+- [Learning notes](docs/learning)

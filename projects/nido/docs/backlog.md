@@ -1,73 +1,74 @@
-# 📋 Backlog inicial
+# 📋 Initial backlog
 
-Este documento es la **fuente** del backlog. Cada historia se convierte en un *issue* de GitHub dentro del Project.
-Formato de historia: *Como [usuario], quiero [acción] para [beneficio]*, con criterios de aceptación (CA).
+This document is the **source** of the backlog: each story becomes a GitHub issue in the Project.
+Story format: *As a [user], I want [action] so that [benefit]*, plus acceptance criteria (AC).
+Every story marked P0 or P1 gets a **spec** in [`specs/`](../specs) before any code is written.
 
-**Tallas:** XS (menos de 1 h) · S (2–3 h) · M (medio día) · L (1–2 días) · XL (hay que dividirla)
-**Prioridad:** P0 (MVP) · P1 (justo después del MVP) · P2 (más adelante)
+**Size:** XS (<1h) · S (2–3h) · M (half a day) · L (1–2 days) · XL (split it)
+**Priority:** P0 (MVP) · P1 (right after MVP) · P2 (later)
 
 ---
 
-## Sprint 0 · Descubrimiento
+## Sprint 0 · Discovery
 
-Los *spikes* son tareas de investigación con un tiempo máximo fijado. Su resultado es un documento, no código.
+Spikes are time-boxed research tasks. Their output is a document, not code.
 
-| ID | Spike | Entregable | Talla |
+| ID | Spike | Output | Size |
 |---|---|---|---|
-| S0-1 | Datos de vivienda joven en España: esfuerzo salarial, emancipación y precios | `docs/research/vivienda.md` con fuentes | M |
-| S0-2 | Tipología de estafas de alquiler (Policía, INCIBE, OCU) | `docs/research/estafas.md` con las señales de alerta | M |
-| S0-3 | Mapa de APIs y datos: Idealista API, Catastro, índices de precios del alquiler, INE, ayudas | `docs/research/apis.md` con acceso, límites y licencia | M |
-| S0-4 | Proveedor de identidad: Keycloak, Supabase Auth o Spring Authorization Server | ADR-0002 | M |
-| S0-5 | Benchmark de competidores (portales, apps de finanzas) | Tabla comparativa | S |
-| S0-6 | Personas de usuario y propuesta de valor | `docs/personas.md` | S |
-| S0-7 | Definir el MVP y cerrar el alcance | Actualizar este backlog | S |
-| S0-8 | Crear el repo, GitHub Projects y las plantillas de issue | Captura del tablero 📸 | S |
+| S0-1 | Youth housing data in Spain: rent-to-income ratio, emancipation, prices | `docs/research/housing.md` with sources | M |
+| S0-2 | Rental scam patterns (Police, INCIBE, OCU) | `docs/research/scams.md` → red flags | M |
+| S0-3 | APIs & data map: Idealista API, Cadastre, rental price index, INE, grants | `docs/research/apis.md` (access, limits, licence) | M |
+| S0-4 | Identity provider: Keycloak vs Supabase Auth vs Spring Authorization Server | ADR-0002 | M |
+| S0-5 | Competitor benchmark (portals, finance apps) | Comparison table | S |
+| S0-6 | User personas & value proposition | `docs/personas.md` | S |
+| S0-7 | Define the MVP and lock the scope | Update this backlog | S |
+| S0-8 | Repo + GitHub Projects + issue templates | Board screenshot 📸 | S |
 
 ---
 
-## Épicas
+## Epics
 
-### EPIC-0 · Plataforma y DevOps · P0
-- **US-0.1** Como desarrolladora, quiero un monorepo con backend Spring Boot y app KMP para trabajar en un único sitio.
-  - CA: compila en local · `README` con instrucciones de arranque
-- **US-0.2** Como desarrolladora, quiero Docker Compose (API, Postgres con pgvector e IdP) para levantar el entorno con un solo comando.
-- **US-0.3** Como desarrolladora, quiero un pipeline de CI (build, tests, lint, escaneo de dependencias y de secretos) para no fusionar código roto ni inseguro.
-- **US-0.4** Como desarrolladora, quiero un `CLAUDE.md` y skills propias para que el asistente siga mis convenciones.
+### EPIC-0 · Platform & DevOps · P0
+- **US-0.1** As a developer, I want a monorepo with the Spring Boot backend and the KMP app so that I work in a single place.
+  - AC: builds locally · README with run instructions
+- **US-0.2** As a developer, I want Docker Compose (API + Postgres/pgvector + IdP) so that the environment starts with one command.
+- **US-0.3** As a developer, I want CI (build, tests, lint, dependency and secret scanning) so that broken or insecure code never gets merged.
+- **US-0.4** As a developer, I want a `CLAUDE.md` and custom skills so that the AI assistant follows my conventions.
 
-### EPIC-1 · Cuenta y seguridad · P0
-- **US-1.1** Como usuaria, quiero entrar con Google para no tener que crear otra contraseña.
-  - CA: flujo OIDC con PKCE en móvil y web · el backend valida los JWT como *resource server*
-- **US-1.2** Como usuaria, quiero borrar mi cuenta y todos mis datos (derecho al olvido del RGPD).
-- **US-1.3** Como desarrolladora, quiero un modelo de amenazas STRIDE del sistema para priorizar los controles.
-- **US-1.4** Como sistema, quiero *rate limiting* y cabeceras de seguridad para mitigar abusos.
+### EPIC-1 · Account & security · P0
+- **US-1.1** As a user, I want to sign in with Google so that I don't need another password.
+  - AC: OIDC + PKCE on mobile and web · backend validates JWTs as a resource server
+- **US-1.2** As a user, I want to delete my account and all my data (GDPR right to erasure).
+- **US-1.3** As a developer, I want a STRIDE threat model of the system so that I can prioritise controls.
+- **US-1.4** As the system, I want rate limiting and security headers so that abuse is mitigated.
 
-### EPIC-2 · Mi dinero · P0
-- **US-2.1** Como usuaria, quiero registrar mis ingresos netos mensuales para calcular qué alquiler me puedo permitir.
-- **US-2.2** Como usuaria, quiero registrar gastos fijos por categoría para ver cuánto me queda libre.
-- **US-2.3** Como usuaria, quiero ver el **% de esfuerzo** de un alquiler respecto a mi sueldo, con un semáforo, para decidir con datos.
-  - CA: verde por debajo del 30 % · ámbar entre el 30 % y el 40 % · rojo por encima del 40 % (umbrales configurables)
-- **US-2.4** Como usuaria, quiero un objetivo de ahorro (fianza, mudanza, muebles) con su progreso.
+### EPIC-2 · My money · P0
+- **US-2.1** As a user, I want to record my monthly net income so that I know what rent I can afford.
+- **US-2.2** As a user, I want to record fixed expenses by category so that I see what's left each month.
+- **US-2.3** As a user, I want to see the **rent-to-income ratio** of a rent with a traffic light so that I decide with data.
+  - AC: green < 30% · amber 30–40% · red > 40% (configurable thresholds)
+- **US-2.4** As a user, I want a savings goal (deposit, moving, furniture) with progress tracking.
 
-### EPIC-3 · Detector de estafas · P0
-- **US-3.1** Como usuaria, quiero pegar el texto de un anuncio y recibir una puntuación de riesgo con los motivos.
-  - CA: respuesta JSON validada contra un esquema · motivos explicados · nunca se presenta como un veredicto absoluto
-- **US-3.2** Como sistema, quiero reglas deterministas (precio anómalo, pago por adelantado, contacto solo por WhatsApp) que complementen a la IA.
-- **US-3.3** Como desarrolladora, quiero proteger el prompt frente a inyecciones dentro del anuncio (OWASP LLM01).
-- **US-3.4** Como desarrolladora, quiero un conjunto de anuncios de prueba (reales y fraudulentos) para medir precisión y *recall*.
+### EPIC-3 · Scam detector · P0
+- **US-3.1** As a user, I want to paste a listing and get a risk score with reasons.
+  - AC: JSON response validated against a schema · reasons explained · never presented as an absolute verdict
+- **US-3.2** As the system, I want deterministic rules (abnormal price, upfront payment, WhatsApp-only contact) that complement the AI.
+- **US-3.3** As a developer, I want the prompt protected against injection inside the listing (OWASP LLM01).
+- **US-3.4** As a developer, I want a test dataset of legit and scam listings so that I can measure precision and recall.
 
-### EPIC-4 · Revisor de contratos · P1
-- **US-4.1** Como usuaria, quiero subir el PDF del contrato y ver las cláusulas dudosas, con la referencia al artículo de la LAU.
-- **US-4.2** Como sistema, quiero indexar la LAU en pgvector (RAG) para fundamentar las respuestas.
-- **US-4.3** Como usuaria, quiero que el contrato no se guarde salvo que yo lo pida (privacidad).
+### EPIC-4 · Contract reviewer · P1
+- **US-4.1** As a user, I want to upload my lease PDF and see dubious clauses with a reference to the LAU article.
+- **US-4.2** As the system, I want the LAU indexed in pgvector (RAG) so that answers are grounded.
+- **US-4.3** As a user, I want my contract not to be stored unless I ask for it (privacy).
 
-### EPIC-5 · Explicador de nómina · P1
-- **US-5.1** Como usuaria, quiero subir mi nómina y que me explique cada concepto.
-- **US-5.2** Como sistema, quiero anonimizar datos personales (DNI, número de Seguridad Social, IBAN) antes de enviarlos al modelo.
+### EPIC-5 · Payslip explainer · P1
+- **US-5.1** As a user, I want to upload my payslip and get every item explained.
+- **US-5.2** As the system, I want to anonymise personal data (ID number, social security number, IBAN) before sending it to the model.
 
-### EPIC-6 · Ayudas · P2
-- **US-6.1** Como usuaria, quiero saber a qué ayudas al alquiler podría optar según mi edad, ingresos y comunidad autónoma.
+### EPIC-6 · Grants · P2
+- **US-6.1** As a user, I want to know which rental grants I may qualify for based on age, income and region.
 
 ---
 
-## 🎯 MVP (propuesta, se confirma en S0-7)
-EPIC-0 + EPIC-1 + EPIC-2 + EPIC-3: **dinero y detector de estafas, con autenticación seria**.
+## 🎯 MVP (proposal, confirmed in S0-7)
+EPIC-0 + EPIC-1 + EPIC-2 + EPIC-3: **money + scam detector, with serious authentication**.
