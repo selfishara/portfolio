@@ -1,12 +1,13 @@
 # CV
 
-📄 [Sara Martínez — CV.pdf](Sara%20Martínez%20-%20CV.pdf)
+📄 [Sara Martínez — CV (PDF)](Sara%20Mart%C3%ADnez%20-%20CV.pdf)
 
-Backend Developer · Android Developer · Barcelona
+Backend Developer · Java · Spring Boot · Barcelona
 
 **Highlights**
-- Backend Developer Intern @ Belgem — Java, Spring Boot, PostgreSQL, Clean Architecture
-- Software Architect @ SongSwipe — Kotlin, Clean Architecture, Spotify API
+- Backend Developer @ onLygal (insurance sector) — Java, Spring Boot, Kotlin, Docker, Kubernetes, Jenkins
+- Backend Developer Intern @ Belgem — co-tech lead of a 7-person team · Java 17, Spring Boot, PostgreSQL, hexagonal architecture, GitHub Actions
+- Software Architect @ SongSwipe — 9-person team · Kotlin, Clean Architecture, Spotify API
 - Solo developer @ GymSpot Lite — Kotlin Multiplatform (Android, Desktop, Web, iOS)
 - DAM Graduate — Ilerna Barcelona, 2025
 
