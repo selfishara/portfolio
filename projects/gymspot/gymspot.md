@@ -104,4 +104,4 @@ The backlog is organized by sprints and includes both technical tasks and user s
 
 ## Repository
 
-[(Repository link here)](https://github.com/selfishara/GymSpot.git)
+[github.com/selfishara/GymSpot](https://github.com/selfishara/GymSpot)

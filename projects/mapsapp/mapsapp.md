@@ -83,4 +83,4 @@ In this project I worked on:
 
 ## Repository
 
-[(Repository link here)](https://github.com/selfishara/MapsApp.git)
+[github.com/selfishara/MapsApp](https://github.com/selfishara/MapsApp)

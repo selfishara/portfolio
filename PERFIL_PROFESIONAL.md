@@ -1,12 +1,12 @@
 # 👩‍💻 Desarrolladora Backend & Software Engineer
 
-> Graduada en Desarrollo de Aplicaciones Multiplataforma (DAM) · Barcelona · Open to Remote & Hybrid
+> Graduada en Desarrollo de Aplicaciones Multiplataforma (DAM) · Barcelona · Open to on-site, hybrid & remote
 
 ---
 
 ## 🚀 Sobre mí
 
-Soy una **desarrolladora junior especializada en backend, arquitectura de software y desarrollo multiplataforma**, recién graduada en DAM con experiencia práctica en proyectos reales de complejidad alta.
+Soy una **desarrolladora junior especializada en backend, arquitectura de software y desarrollo multiplataforma**, graduada en DAM, con experiencia como backend developer en **onLygal** (sector asegurador) y como co-líder técnica en las prácticas de **Belgem**.
 
 Me apasiona construir sistemas escalables, APIs robustas y arquitecturas limpias. He liderado técnicamente proyectos desde cero, cubriendo roles de arquitectura, integración de sistemas, coordinación de equipo y desarrollo backend end-to-end.
 
@@ -36,7 +36,7 @@ Me apasiona construir sistemas escalables, APIs robustas y arquitecturas limpias
 
 ## 🎯 Qué busco
 
-Estoy buscando mi **primera oportunidad profesional** en:
+Estoy abierta a nuevas oportunidades como:
 
 - **Backend Developer** (Java · Kotlin · Spring Boot)
 - **Software Engineer** (arquitectura limpia · microservicios · APIs)
@@ -56,7 +56,7 @@ Backend system built with **Java + Spring Boot** using modular clean architectur
 - REST API design and implementation
 - PostgreSQL database integration and data persistence
 - Hexagonal (Clean) Architecture approach
-- Developed during Backend Developer Internship at Belgem (2025 – present)
+- Developed during my Backend Developer Internship at Belgem, as co-tech lead of a 7-person team
 
 `Java` `Spring Boot` `PostgreSQL` `REST API` `Clean Architecture` `JPA/Hibernate`
 

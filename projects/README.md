@@ -17,7 +17,7 @@ Mobile app inspired by swipe-based interaction for discovering music.
 - Modern UI/UX  
 - API integration  
 
-👉 [View Project](projects/songswipe/songswipe.md)
+👉 [View Project](songswipe/songswipe.md)
 
 ---
 
@@ -30,7 +30,7 @@ Backend system built with a modular and scalable architecture.
 - Clean Architecture (Hexagonal)  
 - REST APIs & database integration  
 
-👉 [View Project](projects/belgem/belgem-backend.md)
+👉 [View Project](belgem/belgem-backend.md)
 
 ---
 
@@ -43,7 +43,7 @@ Android app focused on map interaction and marker management.
 - Maps SDK integration  
 - Supabase backend  
 
-👉 [View Project](projects/mapsapp/mapsapp.md)
+👉 [View Project](mapsapp/mapsapp.md)
 
 ---
 
@@ -56,7 +56,7 @@ Application that consumes and displays data from the Studio Ghibli API.
 - JSON handling  
 - Dynamic UI  
 
-👉 [View Project](projects/ghibli/ghibli-api.md)
+👉 [View Project](ghibli/ghibli-api.md)
 
 ---
 
@@ -69,7 +69,7 @@ Database design project focused on relational modeling.
 - SQL & data modeling  
 - Entity relationships  
 
-👉 [View Project](projects/gym-bdor/gym-bdor.md)
+👉 [View Project](gym-bdor/gym-bdor.md)
 
 ---
 
@@ -82,7 +82,7 @@ Fitness app built with Kotlin Multiplatform targeting Android, Desktop, Web, and
 - Supabase Auth & Postgrest  
 - Wger API integration  
 
-👉 [View Project](projects/gymspot-lite/gymspot-lite.md)
+👉 [View Project](gymspot-lite/README.md)
 
 ---
 
