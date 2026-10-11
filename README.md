@@ -45,7 +45,7 @@ Backend and mobile developer building real-world applications with clean archite
 
 ## About Me
 
-Backend developer with hands-on experience building production systems using Java, Spring Boot, and Kotlin. Graduated in Multiplatform Application Development (DAM). At **onLygal**, an insurance company, I've worked on production incidents, bug fixing, refactoring and new features with Java, Spring Boot and Kotlin, using Eclipse, Jira, Jenkins and SQL across PRE and PRO environments. At **Belgem**, during my internship, I co-led a 7-person team building an ERP backend with hexagonal architecture, Spring Security + JWT, PostgreSQL and GitHub Actions CI.
+Backend developer with hands-on experience building production systems using Java, Spring Boot, and Kotlin. Graduated in Multiplatform Application Development (DAM). At **onLygal**, an insurance company, I've worked on production incidents, bug fixing, refactoring and new features with Java, Spring Boot and Kotlin, using Eclipse, Jira, Jenkins and SQL across PRE and PRO environments. At **Belgem**, during my internship, I co-led a 7-person team building an ERP backend with hexagonal architecture, PostgreSQL and GitHub Actions CI.
 
 I care about writing maintainable, well-structured code and building systems that scale. I also build cross-platform apps with Kotlin Multiplatform and Compose Multiplatform, and I bring a design background that helps me approach products from both a technical and visual perspective.
 
