@@ -56,9 +56,9 @@ Open to backend, software engineering, or Android roles — Barcelona (on-site o
 ## 🚀 Featured Projects
 
 ### 💎 Belgem Backend
-Production ERP backend built with Java 17 + Spring Boot, hexagonal architecture, Spring Security + JWT, PostgreSQL, and GitHub Actions CI/CD. Co-led a team of 7 developers as technical lead.
+Production ERP backend built with Java 17 + Spring Boot, hexagonal architecture, PostgreSQL, and GitHub Actions CI/CD. Co-led a team of 7 developers as technical lead.
 
-`Java` `Spring Boot` `PostgreSQL` `Clean Architecture` `JWT` `GitHub Actions`
+`Java` `Spring Boot` `PostgreSQL` `Clean Architecture` `GitHub Actions`
 
 👉 [View Project](projects/belgem/belgem-backend.md) · [Repository](https://github.com/Alfre-dev2004/Belgem-Backend)
 

@@ -11,7 +11,7 @@ Backend of the **Belgem ERP system** — a business management platform develope
 | Layer | Technology | Notes |
 |---|---|---|
 | Backend | Java 17 + Spring Boot | Main framework |
-| Security | Spring Security + JWT | Token-based auth |
+| Security | Spring Security | Base configuration (token-based auth planned) |
 | Database | PostgreSQL + Supabase | Local persistence + remote collaboration |
 | ORM | JPA / Hibernate | Data layer |
 | Build | Maven | Dependency management |
@@ -47,7 +47,6 @@ PostgreSQL schema `v1` with core ERP entities.
 
 ## Key Features
 
-- JWT-based authentication and authorization via Spring Security
 - RESTful API design with structured endpoints per business module
 - Clean separation between domain logic and infrastructure
 - PostgreSQL integration with JPA/Hibernate for data persistence
